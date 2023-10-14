@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="div-nb">
+            <div class="welcome">
+                <img src="assets/images/logo.png" alt="Logo Bookshelf Apps" class="logo-apps" width="30px" height="30px">
+                <h1 class="nama-apps" style="font-size: 20px;">Bookshelf Apps</h1>
+            </div>
+            
+            <ul>
+                <li class="li-nb">
+                    <a style="text-decoration:none" id="daftar-buku" class="li-nb1">Daftar Buku</a>
+                </li>
+                <li class="li-nb">
+                    <a style="text-decoration:none" id="sedang-dibaca" class="li-nb1">Sedang Dibaca</a>
+                </li>
+                <li class="li-nb">
+                    <a style="text-decoration:none" id="selesai-dibaca" class="li-nb1">Selesai Dibaca</a>
+                </li>
+                <li class="li-nb">
+                    <form class="d-flex" id="searchCard" role="search">
+                        <input class="form-control me-2" id="keyWordSearch" type="search" placeholder="Search" aria-label="Search">
+                        <button id="searchCard" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
+
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox"></input>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div id="card-books-container">
+            </div>
+            <div id="card-unread-container">
+            </div>
+            <div id="card-read-container">
+            </div>
+        </div>
+
+        <div class="container-form">
+            <section class="input_section">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="title-book">Judul</label>
+                        <input id="title-book" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="author-book">Penulis</label>
+                        <input id="author-book" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="year-book">Tahun</label>
+                        <input id="year-book" type="number" required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="check-complete">Selesai dibaca</label>
+                        <input id="check-complete" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Tambah Buku</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="edit_section">
+            <h2>Edit Data Buku</h2>
+            <form id="editBook">
+                <div class="input">
+                    <label for="title-book">Judul</label>
+                    <input id="title-book" class="title-edit" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="author-book">Penulis</label>
+                    <input id="author-book" class="author-edit" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="year-book">Tahun</label>
+                    <input id="year-book" class="year-edit" type="number" required>
+                </div>
+                <div class="input_inline">
+                    <label for="check-complete">Selesai dibaca</label>
+                    <input id="check-complete" class="check-edit" type="checkbox">
+                </div>
+                <button id="bookEdit" type="submit">Edit Data</button>
+            </form>
+        </section>
+    </main>
+    </main>
+
+    <button class="tambah-button">
+        <i style="font-size: 40px;" class="icon-tambah fa">&#xf067;</i>
+    </button>
+    <script src="assets/js/index-script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
